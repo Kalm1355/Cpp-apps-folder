@@ -1,24 +1,22 @@
 #include <iostream>
 
-using namespace std;
-
 int main(){
 
     int birthYear;
     int currentYear;
 
-    cout << "What's your birth year? " << endl;
-    cin >> birthYear;
+    std::cout << "What's your birth year? " << std::endl;
+    std::cin >> birthYear;
 
-    cout << "What's the current year? " << endl;
-    cin >> currentYear;
+    std::cout << "What's the current year? " << std::endl;
+    std::cin >> currentYear;
 
     int age = currentYear - birthYear;
 
     if(age >= 18){
-        cout << "You are an adult" << endl;
+        std::cout << "You are an adult" << std::endl;
     }else{
-        cout << "You are still underage" << endl;
+        std::cout << "You are still underage" << std::endl;
     }
 
     return 0;
